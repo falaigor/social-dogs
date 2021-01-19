@@ -1,0 +1,75 @@
+:root {
+  --color-background: #fff;
+  --color-primary-light: #fea;
+  --color-primary: #fb1;
+  --color-primary-darker: #764701;
+  --color-title-in-primary: #ffffff;
+  --color-text-in-primary: #333;
+  --color-text-complement: #9c98a6;
+  --color-text-base: #6a6180;
+  --color-line-in-white: #e6e6f0;
+  --color-input-background: #f8f8fc;
+  --color-button-text: #ffffff;
+  --color-box-base: #ffffff;
+  --color-box-footer: #fafafc;
+
+
+  --color-error: #f31;
+
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 6rem;
+  background: var(--color-background);
+  color: var(--color-text-in-primary);
+}
+ 
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem Montserrat;
+  color: var(--color-text-base);
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input, button {
+  display: block;
+}
+
+.container {
+  width: 90vw;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
