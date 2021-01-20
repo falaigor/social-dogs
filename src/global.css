@@ -12,8 +12,7 @@
   --color-button-text: #ffffff;
   --color-box-base: #ffffff;
   --color-box-footer: #fafafc;
-
-
+  
   --color-error: #f31;
 
   font-size: 60%;
@@ -35,7 +34,7 @@ body,
 input,
 button,
 textarea {
-  font: 500 1.6rem Montserrat;
+  font: 500 1.6rem 'Red Hat Text', sans-serif;
   color: var(--color-text-base);
 }
 
@@ -66,6 +65,41 @@ input, button {
   width: 90vw;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.title{
+  line-height: 1;
+  font-size: 3.6rem;
+  margin: 1rem 0;
+  position: relative;
+  z-index: 1;
+  color: var(--color-text-in-primary);
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-primary);
+  position: absolute;
+  bottom: 0px;
+  left: -5px;
+  border-radius: 0.4rem;
+  z-index: -1;
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft .3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 
 @media (min-width: 700px) {

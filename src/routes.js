@@ -4,7 +4,7 @@ import { BrowserRouter, Routes as Router, Route } from 'react-router-dom';
 import Footer from './components/Footer/';
 import Header from './components/Header/';
 import Home from './pages/Home/';
-import LoginRoutes from './loginRoutes';
+import Login from './pages/Login';
 import { UserStorage } from './UserContext';
 
 function Routes() {
@@ -15,7 +15,7 @@ function Routes() {
 
         <Router>
           <Route path="/" element={<Home />} />
-          <Route path="login/*" element={<LoginRoutes />} />
+          <Route path="login/*" element={<Login />} />
         </Router>
 
         <Footer />

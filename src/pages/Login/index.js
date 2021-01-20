@@ -1,45 +1,30 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
-
-import Button from '../../utils/Button';
-import Input from '../../utils/Input';
+import { Routes as Router, Route, Navigate } from 'react-router-dom';
 
 import styles from './Login.module.css';
-import useForm from '../../Hooks/useForm';
+
+import LoginForm from '../LoginForm';
+import LoginCreate from '../LoginCreate';
+import LoginPasswordLost from '../LoginPasswordLost';
+import LoginReset from '../LoginReset';
 import { UserContext } from '../../UserContext';
 
-const Login = () => {
-  const username = useForm();
-  const password = useForm();
+function Login() {
+  const { login } = useContext(UserContext);
 
-  const { userLogin, error, loading } = useContext(UserContext);
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-
-    if (username.validate() && password.validate()) {
-      userLogin(username.value, password.value);
-    }
-  }
-
+  if (login === true) return <Navigate to="/account" />;
   return (
-    <section className={styles.section}>
-      <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
-        <Input label="Usuário" type="text" name="username" {...username} />
-
-        <Input label="Senha" type="password" name="password" {...password} />
-        {loading ? (
-          <Button disabled>Entrando...</Button>
-        ) : (
-          <Button>Entrar</Button>
-        )}
-
-        {error && <p>{error}</p>}
-      </form>
-      Não tem uma conta? <Link to="/login/create">Cadastre-se</Link>
+    <section className={styles.login}>
+      <div className={styles.forms}>
+        <Router>
+          <Route path="/" element={<LoginForm />} />
+          <Route path="create" element={<LoginCreate />} />
+          <Route path="password" element={<LoginPasswordLost />} />
+          <Route path="reset" element={<LoginReset />} />
+        </Router>
+      </div>
     </section>
   );
-};
+}
 
 export default Login;

@@ -1,0 +1,45 @@
+.section{
+
+}
+.form{
+  margin-bottom: 2.4rem;
+}
+
+.reset {
+  display: inline-block;
+  color: #666;
+  padding: 0.9rem 0;
+  line-height: 1;
+}
+
+.reset::after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  display: block;
+}
+
+.register {
+  margin-top: 4.4rem;
+}
+
+.register p{
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+}
+
+.subtitle{
+  line-height: 1;
+  font-size: 2.4rem;
+}
+
+.subtitle::after{
+  content: '';
+  display: block;
+  background: #ddd;
+  height: 0.7rem;
+  width: 3.8rem;
+  border-radius: 0.4rem;
+}
