@@ -13,8 +13,8 @@
 }
 
 .forms {
-  width: 100%;
-  display: flex;
+  max-width: 46rem;
+  display: grid;
   align-items: center;
 }
 
