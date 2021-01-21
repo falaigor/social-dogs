@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Routes as Router, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import styles from './Login.module.css';
 
@@ -16,12 +16,12 @@ function Login() {
   return (
     <section className={styles.login}>
       <div className={styles.forms}>
-        <Router>
+        <Routes>
           <Route path="/" element={<LoginForm />} />
           <Route path="create" element={<LoginCreate />} />
           <Route path="password" element={<LoginPasswordLost />} />
           <Route path="reset" element={<LoginReset />} />
-        </Router>
+        </Routes>
       </div>
     </section>
   );
