@@ -17,7 +17,7 @@ function Login() {
     <section className={styles.login}>
       <div className={styles.forms}>
         <Routes>
-          <Route path="/" element={<LoginForm />} />
+          <Route path="/" element={<LoginForm />} end />
           <Route path="create" element={<LoginCreate />} />
           <Route path="password" element={<LoginPasswordLost />} />
           <Route path="reset" element={<LoginReset />} />
