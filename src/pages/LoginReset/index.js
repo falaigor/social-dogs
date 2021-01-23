@@ -3,7 +3,7 @@ import styles from './LoginReset.module.css';
 
 const LoginReset = () => {
   return (
-    <section>
+    <section className={styles}>
       <h1>Login Reset</h1>
     </section>
   );

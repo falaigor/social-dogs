@@ -67,6 +67,10 @@ input, button {
   margin: 0 auto;
 }
 
+.mainContainer{
+  margin-top: 4.2rem;
+}
+
 .title{
   line-height: 1;
   font-size: 3.6rem;

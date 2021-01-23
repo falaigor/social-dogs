@@ -3,7 +3,7 @@ import styles from './LoginPasswordLost.module.css';
 
 const LoginPasswordLost = () => {
   return (
-    <section>
+    <section className={styles}>
       <h1>Login Password Lost</h1>
     </section>
   );
