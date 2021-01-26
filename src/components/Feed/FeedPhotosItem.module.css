@@ -1,11 +1,11 @@
 .photo {
   display: grid;
-  border-radius: 2rem;
+  border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
 }
 
-.photo img {
+.photo > div {
   grid-area: 1/1;
 }
 

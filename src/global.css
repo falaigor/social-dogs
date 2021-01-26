@@ -5,7 +5,7 @@
   --color-primary-darker: #764701;
   --color-title-in-primary: #ffffff;
   --color-text-in-primary: #333;
-  --color-text-complement: #9c98a6;
+  --color-text-complement: #989898;
   --color-text-base: #6a6180;
   --color-line-in-white: #e6e6f0;
   --color-input-background: #f8f8fc;
@@ -68,7 +68,7 @@ input, button {
 }
 
 .mainContainer{
-  margin-top: 4.2rem;
+  margin-top: 2.2rem;
 }
 
 .title{

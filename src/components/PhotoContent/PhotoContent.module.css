@@ -1,0 +1,94 @@
+.photo {
+  margin: auto;
+  height: 70rem;
+  border-radius: .4rem;
+  background: white;
+  display: grid;
+  grid-template-columns: 70rem 30rem;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: scaleUp 0.3s forwards;
+}
+
+.details{
+  padding: 2.4rem 2.4rem 0 2.4rem; 
+}
+
+.img {
+  grid-row: 1/4;
+}
+
+.comments {
+  padding: 0 2.4rem;
+}
+
+.author {
+  opacity: 0.5;
+  margin-bottom: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author a {
+  color: var(--color-text-complement);
+}
+
+.author a:hover {
+  text-decoration: underline;
+}
+
+.views::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 10px;
+  margin-right: .9rem;
+  background: url('../../images/visualizacao-black.svg') no-repeat;
+}
+
+.attributes {
+  display: flex;
+  font-size: 1.425rem;
+  font-weight: bold;
+  margin-top: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.attributes li {
+  margin-right: 2.4rem;
+}
+
+.attributes li::before{
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: .9rem;
+  position: relative;
+  top: 3px;
+  background: #333;
+}
+
+@media (max-width: 64rem){
+  .photo {
+    height: auto;
+    max-height: calc(100vh - 4rem);
+    overflow: auto;
+    grid-template-columns: minmax(40rem, 70rem);
+  }
+
+  .img {
+    grid-row: 1;
+  }
+}
+
+@keyframes scaleUp{
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
