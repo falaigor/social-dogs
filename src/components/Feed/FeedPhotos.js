@@ -8,17 +8,18 @@ import Loading from '../Helper/Loading';
 import styles from './FeedPhotos.module.css';
 import FeedPhotosItem from './FeedPhotosItem';
 
-const FeedPhotos = ({ user, setModalPhoto }) => {
+const FeedPhotos = ({ user, page, setModalPhoto, setInfinity }) => {
   const { data, error, loading, request } = useFetch();
 
   useEffect(() => {
     async function fetchPhotos() {
-      const { url, options } = PHOTOS_GET({ page: 1, total: 3, user });
-      await request(url, options);
-      console.log(user);
+      const total = 3;
+      const { url, options } = PHOTOS_GET({ page, total, user });
+      const { response, json } = await request(url, options);
+      if (response && response.ok && json.length < total) setInfinity(false);
     }
     fetchPhotos();
-  }, [request, user]);
+  }, [request, user, page, setInfinity]);
 
   if (error) return <Error error={error} />;
   if (loading) return <Loading />;
