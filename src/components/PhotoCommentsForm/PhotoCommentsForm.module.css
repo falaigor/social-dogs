@@ -52,6 +52,10 @@
   animation: latir 0.6s infinite;
 }
 
+.single.form{
+  margin: 1.4rem 0;
+}
+
 @keyframes latir {
   from{
     opacity: 0;

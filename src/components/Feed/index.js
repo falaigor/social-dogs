@@ -5,13 +5,13 @@ import FeedPhotos from './FeedPhotos';
 const Feed = ({ user }) => {
   const [modalPhoto, setModalPhoto] = useState(null);
   const [pages, setPages] = useState([1]);
-  const [infinity, setInfinity] = useState(true);
+  const [infinite, setInfinite] = useState(true);
 
   useEffect(() => {
     let wait = false;
 
     function infinityScroll(event) {
-      if (infinity) {
+      if (infinite) {
         const scroll = window.scrollY;
         const heigth = document.body.offsetHeight - window.innerHeight;
         if (scroll > heigth * 0.75 && !wait) {
@@ -31,7 +31,7 @@ const Feed = ({ user }) => {
       window.removeEventListener('wheel', infinityScroll);
       window.removeEventListener('scroll', infinityScroll);
     };
-  }, [infinity]);
+  }, [infinite]);
 
   return (
     <div>
@@ -44,9 +44,20 @@ const Feed = ({ user }) => {
           user={user}
           page={page}
           setModalPhoto={setModalPhoto}
-          setInfinity={setInfinity}
+          setInfinite={setInfinite}
         />
       ))}
+      {!infinite && !user && (
+        <p
+          style={{
+            textAlign: 'center',
+            padding: '2rem 0 4rem 0',
+            color: '#888',
+          }}
+        >
+          Não existem mais postagens.
+        </p>
+      )}
     </div>
   );
 };

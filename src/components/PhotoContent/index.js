@@ -6,12 +6,12 @@ import PhotoComments from '../PhotoComments';
 import PhotoDelete from '../PhotoDelete';
 import styles from './PhotoContent.module.css';
 
-const PhotoContent = ({ data }) => {
+const PhotoContent = ({ data, single }) => {
   const { photo, comments } = data;
   const user = useContext(UserContext);
 
   return (
-    <div className={styles.photo}>
+    <div className={`${styles.photo} ${single ? styles.single : ''}`}>
       <div className={styles.img}>
         <Image src={photo.src} alt={photo.title} />
       </div>
@@ -26,14 +26,16 @@ const PhotoContent = ({ data }) => {
 
             <span className={styles.views}>{photo.acessos}</span>
           </p>
-          <h1 className="title">{photo.title}</h1>
+          <h1 className="title">
+            <Link to={`/photo/${photo.id}`}>{photo.title}</Link>
+          </h1>
           <ul className={styles.attributes}>
             <li>{photo.peso} kg</li>
             <li>{photo.idade} anos</li>
           </ul>
         </div>
       </div>
-      <PhotoComments id={photo.id} comments={comments} />
+      <PhotoComments id={photo.id} single={single} comments={comments} />
     </div>
   );
 };
