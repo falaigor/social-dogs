@@ -20,7 +20,7 @@ function Login() {
         <Routes>
           <Route path="/" element={<LoginForm />} end />
           <Route path="create" element={<LoginCreate />} />
-          <Route path="password" element={<LoginPasswordLost />} />
+          <Route path="lost" element={<LoginPasswordLost />} />
           <Route path="reset" element={<LoginReset />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
