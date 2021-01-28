@@ -21,3 +21,9 @@
   height: 0px;
   padding-bottom: 100%;
 }
+
+@media(max-width: 40rem){
+  .photoPost{{
+    grid-template-columns: 1fr;
+  }}
+}
