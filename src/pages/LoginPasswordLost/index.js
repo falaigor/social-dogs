@@ -20,7 +20,7 @@ const LoginPasswordLost = () => {
         login: login.value,
         url: window.location.href.replace('lost', 'reset'),
       });
-      const { join } = await request(url, options);
+      await request(url, options);
     }
   }
 
