@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+<div>
+<h1 align="center">
+  <img alt="Portfólio" src=".github/logo.png" width="30px"> <b>Social Dogs</b>
+  <br><br>
+</h1>
+<p align="center">Uma rede social boa pra cachorro</p><br>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+ <a href="#sobre">Sobre</a> • 
+ <a href="#instalacao">Instalação</a> • 
+ <a href="#contribuicao">Contribuição</a> 
+</p>
 
-## Available Scripts
+<p align="center">
+  <img alt="Portfólio" src=".github/capa.png" width="100%">
+</p>
 
-In the project directory, you can run:
+# 💻 Sobre
 
-### `yarn start`
+Uma rede social para cachorros. <br>
+Onde o usuário pode se cadastrar, fazer uploads das suas imagens e ter estatisticas do seu perfil e do quanto ele foi visualizado.<br>
+Projeto realizado na conclusão do curso React Completo da escola Origamid. 💜<br><br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# 🚀 Instalação
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Para baixar o projeto siga as instruções abaixo:
 
-### `yarn test`
+```sh
+git clone https://github.com/falaigor/social-dogs.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+cd social-dogs
+```
 
-### `yarn build`
+Instale as dependências e inicie o projeto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+yarn install
+yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ou
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm install
+npm start
+```
 
-### `yarn eject`
+# :handshake: Contribuição
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p>
+Este projeto é para fins de estudo também, então me mande um e-mail me contando o que você está fazendo e por que está fazendo, me ensine o que você sabe.<br><br>
+Todos as contribuições são muito bem-vindos e apreciadas!<br><br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ⭐️ Estrelinha no projeto
+- 🐛 Encontre e reporte bugs
+- 📥 Envie PRs para ajudar a resolver problemas ou adicionar recursos
+- ✋ Influencie o futuro do Igor Santos com solicitações de recursos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+</p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito com 💜 by Igor Santos :wave:
