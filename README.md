@@ -7,6 +7,18 @@
 </div>
 
 <p align="center">
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/progress-100%25-brightgreen.svg" alt="PRs Welcome">
+  </a>
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/contribuition-welcome-brightgreen.svg" alt="PRs Welcome">
+  </a>
+  <a href="https://saythanks.io/to/wendelfreitas">
+      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
+  </a>
+</p>
+
+<p align="center">
  <a href="#sobre">Sobre</a> • 
  <a href="#instalacao">Instalação</a> • 
  <a href="#contribuicao">Contribuição</a> 
